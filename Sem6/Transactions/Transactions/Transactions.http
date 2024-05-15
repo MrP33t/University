@@ -1,0 +1,32 @@
+@Transactions_HostAddress = https://localhost:7045
+
+
+GET {{Transactions_HostAddress}}/api/advertisment
+
+###
+
+DELETE {{Transactions_HostAddress}}/api/advertisment?id=0
+
+###
+
+POST {{Transactions_HostAddress}}/api/advertisment
+Content-Type: application/json
+
+{
+  //Advertisment
+}
+
+###
+
+PUT {{Transactions_HostAddress}}/api/advertisment
+Content-Type: application/json
+
+{
+  //Advertisment
+}
+
+###
+
+GET {{Transactions_HostAddress}}/api/advertisment/0
+
+###
