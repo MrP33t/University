@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VignereCipher.MainPage">
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,150"
+            Spacing="25">
+            <Label
+                x:Name="ErrorText"
+                Text=""
+                Style="{StaticResource SubHeadline}"
+                TextColor="Red"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <HorizontalStackLayout
+                HorizontalOptions="CenterAndExpand"
+                >
+                <Label
+                    x:Name="TextFilePathText"
+                    Text="Selected text file: &#10; None"
+                    Style="{StaticResource SubHeadline}"
+                    SemanticProperties.HeadingLevel="Level2"
+                    SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+                <Label
+                    x:Name="KeyFilePathText"
+                    Text="Selected key file: &#10; None"
+                    Style="{StaticResource SubHeadline}"
+                    SemanticProperties.HeadingLevel="Level2"
+                    SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout
+                HorizontalOptions="CenterAndExpand"
+                >
+                <Button
+                    x:Name="SelectTextBtn"
+                    Text="Select Text" 
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnSelectTextFileClicked" />
+                <Button
+                    x:Name="SelectKeyBtn"
+                    Text="Select Key" 
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnSelectKeyFileClicked" />
+                <Button
+                    x:Name="CipherBtn"
+                    Text="Cipher" 
+                    SemanticProperties.Hint="Counts the number of times you click"
+                    Clicked="OnCipherClicked" />
+                <Button
+                    x:Name="DecipherBtn"
+                    Text="Decipher" 
+                    SemanticProperties.Hint="Counts the num er of times you click"
+                    Clicked="OnDecipherClicked" />
+                <Button
+                    x:Name="DecipherNoKeyBtn"
+                    Text="Decipher without key" 
+                    SemanticProperties.Hint="Counts the num er of times you click"
+                    Clicked="OnDecipherWithoutKeyClicked" />
+                <Button
+                    x:Name="GetKeyLengthBtn"
+                    Text="Get key length" 
+                    SemanticProperties.Hint="Counts the num er of times you click"
+                    Clicked="OnGetKeyLengthClicked" />
+            </HorizontalStackLayout>
+            <Label
+                Text="Provide output path:"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+            <Editor
+                Text="{Binding Path=OutputPath}"/>
+            <Label
+                x:Name="FoundKeyLengthLabel"
+                Text="Found key length: &#10; None"
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
