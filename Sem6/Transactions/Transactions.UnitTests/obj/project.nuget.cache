@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kftf2kqw1HvssQUgAi73h7Vrl2+jO9DZZUzwOAZB6zKiSMSj3QEBcL+MNF8UNEt976/TYaa77TXlkv/LP08WKw==",
+  "dgSpecHash": "gdhAMGU9bXU=",
   "success": true,
-  "projectFilePath": "C:\\Studia\\Sem6\\Transactions\\Transactions.UnitTests\\Transactions.UnitTests.csproj",
+  "projectFilePath": "C:\\Studia\\University\\Sem6\\Transactions\\Transactions.UnitTests\\Transactions.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kamin\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\kamin\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
